@@ -25,3 +25,11 @@ salary,
 (salary + 100) * 10
 FROM employee_salary;
 
+-- How to get Distinct or Non-Duplicates value
+SELECT department_id
+FROM employee_salary;
+
+SELECT DISTINCT department_id
+FROM employee_salary;
+
+

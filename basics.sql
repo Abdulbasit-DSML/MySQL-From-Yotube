@@ -67,7 +67,12 @@ WHERE first_name LIKE 'a%';
 SELECT *
 FROM employee_demographics
 WHERE first_name LIKE 'a__';
--- Outputs records starts with a upto 3 characters long
+-- Outputs whose first name starts with the letter 'a' and is exactly 3 characters long.
+
+SELECT *
+FROM employee_demographics
+WHERE first_name LIKE 'a___%';
+-- Outputs whose first name is exactly 5 letters long, starts with the letter "a", and can have any 3 characters in the middle
 
 
 

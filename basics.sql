@@ -59,6 +59,10 @@ WHERE birth_date > '1985-01-01';
 -- two special characters a % and a _
 -- % means anything
 
+SELECT *
+FROM employee_demographics
+WHERE first_name LIKE 'a%';
+-- Outputs all records starts with a
 
 
 

@@ -50,5 +50,10 @@ FROM employee_demographics
 WHERE gender != 'Female';
 -- Outputs records with male "not equal to representation"
 
+-- We can use WHERE clause with date value also
+SELECT *
+FROM employee_demographics
+WHERE birth_date > '1985-01-01';
+
 
 

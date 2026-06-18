@@ -55,5 +55,10 @@ SELECT *
 FROM employee_demographics
 WHERE birth_date > '1985-01-01';
 
+-- LIKE STATEMENT
+-- two special characters a % and a _
+-- % means anything
+
+
 
 

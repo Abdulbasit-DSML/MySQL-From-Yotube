@@ -62,7 +62,12 @@ WHERE birth_date > '1985-01-01';
 SELECT *
 FROM employee_demographics
 WHERE first_name LIKE 'a%';
--- Outputs all records starts with a
+-- Outputs  records starts with a
+
+SELECT *
+FROM employee_demographics
+WHERE first_name LIKE 'a__';
+-- Outputs records starts with a upto 3 characters long
 
 
 

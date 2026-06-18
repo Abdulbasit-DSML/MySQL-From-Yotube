@@ -29,13 +29,20 @@ FROM employee_salary;
 SELECT department_id
 FROM employee_salary;
 
+SELECT DISTINCT department_id
+FROM employee_salary;
+
 -- WHERE clause
 -- used when we have to apply specific conditions 
 SELECT *
 FROM employee_salary
 WHERE salary > 50000;
-SELECT DISTINCT department_id
-FROM employee_salary;
+-- Outputs records having salary more than 50000
+
+SELECT *
+FROM employee_demographics
+WHERE gender = 'Female';
+-- Outputs records with female gender
 
 
 

@@ -45,4 +45,10 @@ WHERE gender = 'Female';
 -- Outputs records with female gender
 
 
+SELECT *
+FROM employee_demographics
+WHERE gender != 'Female';
+-- Outputs records with male "not equal to representation"
+
+
 

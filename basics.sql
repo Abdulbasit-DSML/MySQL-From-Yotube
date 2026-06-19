@@ -135,8 +135,7 @@ GROUP BY gender
 HAVING AVG(age) > 40
 ;
 
--- LIMIT and ALIASING
-
+-- LIMIT 
 -- Limit is just going to specify how many rows you want in the output
 SELECT *
 FROM employee_demographics
@@ -148,4 +147,11 @@ FROM employee_demographics
 ORDER BY first_name
 LIMIT 3,2;
 -- this now says start at position 3 and take 2 rows after that
+
+-- ALIASING
+-- aliasing is just a way to change the name of the column (for the most part)
+-- we can use the keyword AS to specify we are using an Alias
+SELECT gender, AVG(age) AS Avg_age
+FROM employee_demographics
+GROUP BY gender;
 

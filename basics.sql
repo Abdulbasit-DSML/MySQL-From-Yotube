@@ -135,5 +135,10 @@ GROUP BY gender
 HAVING AVG(age) > 40
 ;
 
+-- LIMIT and ALIASING
 
+-- Limit is just going to specify how many rows you want in the output
+SELECT *
+FROM employee_demographics
+LIMIT 3;
 

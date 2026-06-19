@@ -83,8 +83,12 @@ GROUP BY gender;
 
 SELECT first_name
 FROM employee_demographics
-GROUP BY gender
-;
+GROUP BY gender;
+
+-- when we group by 2 columns we now have a row for both occupation and salary because salary is different
+SELECT occupation, salary
+FROM employee_salary
+GROUP BY occupation, salary;
 
 
 

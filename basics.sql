@@ -107,6 +107,14 @@ FROM employee_demographics
 ORDER BY first_name DESC;
 -- Outputs the names in Descending order
 
+-- Using multiple columns
+SELECT *
+FROM employee_demographics
+ORDER BY gender DESC, age DESC;
+
+
+
+
 
 
 

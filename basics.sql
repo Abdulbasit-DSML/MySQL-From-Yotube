@@ -155,3 +155,9 @@ SELECT gender, AVG(age) AS Avg_age
 FROM employee_demographics
 GROUP BY gender;
 
+-- Direclty with AS keyword
+SELECT gender, AVG(age) Avg_age
+FROM employee_demographics
+GROUP BY gender
+;
+

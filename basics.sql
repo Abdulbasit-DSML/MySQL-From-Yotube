@@ -142,3 +142,10 @@ SELECT *
 FROM employee_demographics
 LIMIT 3;
 
+
+SELECT *
+FROM employee_demographics
+ORDER BY first_name
+LIMIT 3,2;
+-- this now says start at position 3 and take 2 rows after that
+

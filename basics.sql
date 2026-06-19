@@ -90,6 +90,11 @@ SELECT occupation, salary
 FROM employee_salary
 GROUP BY occupation, salary;
 
+-- Group By using aggregate functions
+SELECT gender, MIN(age), MAX(age), COUNT(age),AVG(age)
+FROM employee_demographics
+GROUP BY gender;
+
 
 
 

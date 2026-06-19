@@ -74,5 +74,19 @@ FROM employee_demographics
 WHERE first_name LIKE 'a___%';
 -- Outputs whose first name is exactly 5 letters long, starts with the letter "a", and can have any 3 characters in the middle
 
+-- Group By
+
+-- when you use group by  you have to have the same columns you're grouping on in the group by statement
+SELECT gender
+FROM employee_demographics
+GROUP BY gender;
+
+SELECT first_name
+FROM employee_demographics
+GROUP BY gender
+;
+
+
+
 
 

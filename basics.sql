@@ -95,6 +95,18 @@ SELECT gender, MIN(age), MAX(age), COUNT(age),AVG(age)
 FROM employee_demographics
 GROUP BY gender;
 
+-- Order By Statement
+
+SELECT *
+FROM customers
+ORDER BY first_name;
+-- First let's start simple with just ordering by one column
+
+SELECT *
+FROM employee_demographics
+ORDER BY first_name DESC;
+-- Outputs the names in Descending order
+
 
 
 

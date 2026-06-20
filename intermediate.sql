@@ -31,3 +31,14 @@ CASE
 	WHEN dept_id = 6 THEN salary * .10
 END AS Bonus
 FROM employee_salary;
+
+-- Joins
+-- joins allow you to combine 2 tables together (or more) if they have a common column.
+-- doesn't mean they need the same column name, but the data in it are the same and can be used to join the tables together
+-- Creating a JOIN
+SELECT *
+FROM employee_demographics
+JOIN employee_salary
+	ON employee_demographics.employee_id = employee_salary.employee_id;
+
+

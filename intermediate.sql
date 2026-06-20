@@ -19,3 +19,15 @@ CASE
     WHEN salary < 45000 THEN salary + (salary * 0.07)
 END AS new_salary
 FROM employee_salary;
+
+-- Multiple case statement
+
+SELECT first_name, last_name, salary,
+CASE
+	WHEN salary > 45000 THEN salary + (salary * 0.05)
+    WHEN salary < 45000 THEN salary + (salary * 0.07)
+END AS new_salary,
+CASE
+	WHEN dept_id = 6 THEN salary * .10
+END AS Bonus
+FROM employee_salary;

@@ -75,3 +75,10 @@ FROM employee_salary emp1
 JOIN employee_salary emp2
 	ON emp1.employee_id + 1  = emp2.employee_id;
 
+-- Joining multiple tables
+SELECT *
+FROM employee_demographics dem
+INNER JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+JOIN parks_departments dept
+	ON dept.department_id = sal.dept_id;

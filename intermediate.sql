@@ -48,3 +48,10 @@ FROM employee_demographics dem
 INNER JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id;
 
+
+-- left JOIN
+-- a left join will take everything from the left table even if there is no match in the join, but will only return matches from the right table
+SELECT *
+FROM employee_salary sal
+LEFT JOIN employee_demographics dem
+	ON dem.employee_id = sal.employee_id;

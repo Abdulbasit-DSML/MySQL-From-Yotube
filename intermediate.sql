@@ -67,5 +67,11 @@ RIGHT JOIN employee_demographics dem
 SELECT *
 FROM employee_salary emp1
 JOIN employee_salary emp2
-	ON emp1.employee_id = emp2.employee_id
-    ;
+	ON emp1.employee_id = emp2.employee_id;
+
+
+SELECT emp1.employee_id as emp_santa, emp1.first_name as santa_first_name, emp1.last_name as santa_last_name, emp2.employee_id, emp2.first_name, emp2.last_name
+FROM employee_salary emp1
+JOIN employee_salary emp2
+	ON emp1.employee_id + 1  = emp2.employee_id;
+

@@ -55,3 +55,9 @@ SELECT *
 FROM employee_salary sal
 LEFT JOIN employee_demographics dem
 	ON dem.employee_id = sal.employee_id;
+
+-- Right JOIN Vicecersa of leftjoin
+SELECT *
+FROM employee_salary sal
+RIGHT JOIN employee_demographics dem
+	ON dem.employee_id = sal.employee_id;

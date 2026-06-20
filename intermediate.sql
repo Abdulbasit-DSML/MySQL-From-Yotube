@@ -61,3 +61,11 @@ SELECT *
 FROM employee_salary sal
 RIGHT JOIN employee_demographics dem
 	ON dem.employee_id = sal.employee_id;
+
+-- Self Join
+-- a self join is where you tie a table to itself
+SELECT *
+FROM employee_salary emp1
+JOIN employee_salary emp2
+	ON emp1.employee_id = emp2.employee_id
+    ;

@@ -89,3 +89,8 @@ JOIN parks_departments dept
 SELECT first_name, LENGTH(first_name) 
 FROM employee_demographics;
 -- Outputs the length of first name
+
+-- Upper function
+SELECT first_name, UPPER(first_name) 
+FROM employee_demographics;
+-- Outputs the first name in upper case

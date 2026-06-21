@@ -109,3 +109,12 @@ SELECT LTRIM('     I love SQL');
 -- There's also R trim for trimming just the Right side
 SELECT RTRIM('I love SQL    ');
 
+-- left & Right functions(used to extract data)
+SELECT first_name, LEFT(first_name,4) 
+FROM employee_demographics;
+-- Outputs first 4 character from left side
+
+SELECT first_name, RIGHT(first_name,4) 
+FROM employee_demographics;
+-- Outputs first 4 character from Right side
+

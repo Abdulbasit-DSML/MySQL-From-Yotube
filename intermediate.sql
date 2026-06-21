@@ -100,4 +100,12 @@ SELECT first_name, LOWER(first_name)
 FROM employee_demographics;
 -- Outputs the first name in lower case
 
+-- Trim functions (used to remove spaces)
+
+SELECT TRIM("   sql")
+-- There's also L trim for trimming just the left side
+SELECT LTRIM('     I love SQL');
+
+-- There's also R trim for trimming just the Right side
+SELECT RTRIM('I love SQL    ');
 

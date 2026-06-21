@@ -118,3 +118,8 @@ SELECT first_name, RIGHT(first_name,4)
 FROM employee_demographics;
 -- Outputs first 4 character from Right side
 
+-- SUBSTRING function
+SELECT birth_date, SUBSTRING(birth_date,1,4) as birth_year
+FROM employee_demographics;
+-- Output the year extract from date eg. 2006/07/12
+

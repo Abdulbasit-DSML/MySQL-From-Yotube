@@ -82,3 +82,10 @@ INNER JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id
 JOIN parks_departments dept
 	ON dept.department_id = sal.dept_id;
+
+-- String Functions
+
+-- Length Function
+SELECT first_name, LENGTH(first_name) 
+FROM employee_demographics;
+-- Outputs the length of first name

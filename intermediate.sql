@@ -94,3 +94,10 @@ FROM employee_demographics;
 SELECT first_name, UPPER(first_name) 
 FROM employee_demographics;
 -- Outputs the first name in upper case
+
+-- Lower function
+SELECT first_name, LOWER(first_name) 
+FROM employee_demographics;
+-- Outputs the first name in lower case
+
+

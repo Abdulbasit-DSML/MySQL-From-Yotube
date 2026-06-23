@@ -169,8 +169,14 @@ GROUP BY gender) AS Agg_Table
 GROUP BY gender
 ;
 
-
-
+-- UNION
+-- A union is how you can combine rows together- not columns like we have been doing with joins where one column is put next to another
+-- Joins allow you to combine the rows of data
+SELECT first_name, last_name
+FROM employee_demographics
+UNION
+SELECT occupation, salary
+FROM employee_salary;
 
 
 

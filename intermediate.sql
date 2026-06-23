@@ -121,5 +121,16 @@ FROM employee_demographics;
 -- SUBSTRING function
 SELECT birth_date, SUBSTRING(birth_date,1,4) as birth_year
 FROM employee_demographics;
+
+-- Locate function
+SELECT LOCATE('x', 'Alexander');
+
+-- Let's try it on our first name
+SELECT first_name, LOCATE('a',first_name) 
+FROM employee_demographics;
+
+-- Here we can combine the first and the last name columns together
+SELECT CONCAT(first_name, ' ', last_name) AS full_name
+FROM employee_demographics;
 -- Output the year extract from date eg. 2006/07/12
 

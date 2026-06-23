@@ -214,6 +214,14 @@ JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id
 ;
 
+-- now we can add any columns and it works. We could get this exact same output with a subquery in the select statement, 
+-- but window functions have a lot more functionality, let's take a look
+-- if we use partition it's kind of like the group by except it doesn't roll up - it just partitions or breaks based on a column when doing the calculation
 
-
+SELECT dem.employee_id, dem.first_name, gender, salary,
+AVG(salary) OVER(PARTITION BY gender)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+;
 

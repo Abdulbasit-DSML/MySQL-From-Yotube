@@ -134,3 +134,6 @@ SELECT CONCAT(first_name, ' ', last_name) AS full_name
 FROM employee_demographics;
 -- Output the year extract from date eg. 2006/07/12
 
+-- Locate Function
+SELECT REPLACE(first_name,'a','z')
+FROM employee_demographics;

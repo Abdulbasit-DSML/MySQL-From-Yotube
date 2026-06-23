@@ -178,6 +178,13 @@ UNION
 SELECT occupation, salary
 FROM employee_salary;
 
+-- UNION DISTINCT
+SELECT first_name, last_name
+FROM employee_demographics
+UNION DISTINCT
+SELECT first_name, last_name
+FROM employee_salary;
+
 
 
 

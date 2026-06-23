@@ -147,6 +147,11 @@ WHERE employee_id IN
                 WHERE dept_id = 1);
                 
 
+SELECT first_name, 
+salary, 
+(SELECT AVG(salary) 
+	FROM employee_salary)
+FROM employee_salary;
 
 
 

@@ -225,3 +225,12 @@ JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id
 ;
 
+-- Let's look at row_number rank and dense rank now
+SELECT dem.employee_id, dem.first_name, gender, salary,
+ROW_NUMBER() OVER(PARTITION BY gender)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+;
+
+

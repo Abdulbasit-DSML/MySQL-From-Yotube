@@ -185,6 +185,26 @@ UNION DISTINCT
 SELECT first_name, last_name
 FROM employee_salary;
 
+-- UNION ALL
+SELECT first_name, last_name
+FROM employee_demographics
+UNION ALL
+SELECT first_name, last_name
+FROM employee_salary;
+
+
+-- Window Functions
+-- windows functions are really powerful and are somewhat like a group by - except they don't roll everything up into 1
+SELECT * 
+FROM employee_demographics;
+-- first let's look at group by
+SELECT gender, ROUND(AVG(salary),1)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+GROUP BY gender
+;
+
 
 
 

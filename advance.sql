@@ -41,4 +41,8 @@ FROM parks_and_recreation.employee_salary
 WHERE salary >= 50000
 )
 
-
+-- Now if we change this a bit, we can join these two CTEs together
+SELECT *
+FROM CTE_Example cte1
+LEFT JOIN CTE_Example2 cte2
+	ON cte1. employee_id = cte2. employee_id;

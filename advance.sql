@@ -60,3 +60,11 @@ GROUP BY gender
 SELECT gender, ROUND(AVG(sum_salary/count_salary),2)
 FROM CTE_Example
 GROUP BY gender;
+
+-- Stored Procedure
+
+CREATE PROCEDURE large_salaries()
+SELECT *
+FROM employee_salary
+WHERE salary >= 60000;
+

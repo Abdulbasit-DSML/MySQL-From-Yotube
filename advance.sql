@@ -68,3 +68,5 @@ SELECT *
 FROM employee_salary
 WHERE salary >= 60000;
 
+-- If we want to call it and use it we can call it by saying:
+CALL large_salaries();

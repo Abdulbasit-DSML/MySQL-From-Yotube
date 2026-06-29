@@ -25,3 +25,20 @@ GROUP BY gender
 SELECT gender, ROUND(AVG(`SUM(salary)`/`COUNT(salary)`),2)
 FROM CTE_Example
 GROUP BY gender;
+
+-- we also have the ability to create multiple CTEs with just one With Expression
+
+WITH CTE_Example AS 
+(
+SELECT employee_id, gender, birth_date
+FROM employee_demographics dem
+WHERE birth_date > '1985-01-01'
+), -- just have to separate by using a comma
+CTE_Example2 AS 
+(
+SELECT employee_id, salary
+FROM parks_and_recreation.employee_salary
+WHERE salary >= 50000
+)
+
+

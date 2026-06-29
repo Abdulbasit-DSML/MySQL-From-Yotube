@@ -70,3 +70,21 @@ WHERE salary >= 60000;
 
 -- If we want to call it and use it we can call it by saying:
 CALL large_salaries();
+
+
+-- DELIMITER 
+DELIMITER $$
+CREATE PROCEDURE large_salaries2()
+BEGIN
+	SELECT *
+	FROM employee_salary
+	WHERE salary >= 60000;
+	SELECT *
+	FROM employee_salary
+	WHERE salary >= 50000;
+END $$
+
+-- now we change the delimiter back after we use it to make it default again
+DELIMITER ;
+
+CALL large_salaries2();

@@ -114,3 +114,18 @@ WHERE salary > 50000;
 -- if we run this query we get our output
 SELECT *
 FROM salary_over_50k;
+
+-- Triggers
+-- a Trigger is a block of code that executes automatically executes when an event takes place in a table.
+
+USE parks_and_recreation;
+DELIMITER $$
+
+CREATE TRIGGER employee_insert2
+	AFTER INSERT ON employee_salary
+    FOR EACH ROW
+    -- now we can write our block of code that we want to run when this is triggered
+BEGIN
+    INSERT INTO employee_demographics (employee_id, first_name, last_name) VALUES (NEW.employee_id,NEW.first_name,NEW.last_name);
+END $$
+DELIMITER ; 

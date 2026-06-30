@@ -96,3 +96,12 @@ CREATE TEMPORARY TABLE temp_table
 last_name varchar(50),
 favorite_movie varchar(100)
 );
+
+-- now obviously it's balnk so we would need to insert data into it like this:
+
+INSERT INTO temp_table
+VALUES ('Alex','Freberg','Lord of the Rings: The Twin Towers');
+
+-- now when we run it and execute it again we have our data
+SELECT *
+FROM temp_table;

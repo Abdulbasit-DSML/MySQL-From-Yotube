@@ -105,3 +105,12 @@ VALUES ('Alex','Freberg','Lord of the Rings: The Twin Towers');
 -- now when we run it and execute it again we have our data
 SELECT *
 FROM temp_table;
+
+CREATE TEMPORARY TABLE salary_over_50k
+SELECT *
+FROM employee_salary
+WHERE salary > 50000;
+
+-- if we run this query we get our output
+SELECT *
+FROM salary_over_50k;

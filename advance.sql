@@ -88,3 +88,11 @@ END $$
 DELIMITER ;
 
 CALL large_salaries2();
+
+-- Using Temporary Tables
+-- Temporary tables are tables that are only visible to the session that created them. 
+CREATE TEMPORARY TABLE temp_table
+(first_name varchar(50),
+last_name varchar(50),
+favorite_movie varchar(100)
+);
